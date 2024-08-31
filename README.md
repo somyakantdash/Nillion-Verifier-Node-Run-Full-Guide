@@ -74,7 +74,7 @@ cat ~/nillion/accuser/credentials.json
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5114183
 ```
 
-NOte - Replace To The Latest Block Height (It’s Imp to minus -20 to 50 Block Height, just Replace To latest Block height)
+Note - Replace To The Latest Block Height (It’s Imp to minus -20 to 40 Block Height, just Replace To latest Block height)
 
 Important Points
 - If You Saw Registered = True(Means You did all the steps correctly), 
@@ -93,6 +93,6 @@ Important Points
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5114183
 ```
 
-NOte - Replace To The Latest Block Height (It’s Imp to minus -20 to 50 Block Height, just Replace To latest Block height)
+Note - Replace To The Latest Block Height (It’s Imp to minus -20 to 40 Block Height, just Replace To latest Block height)
 
 
