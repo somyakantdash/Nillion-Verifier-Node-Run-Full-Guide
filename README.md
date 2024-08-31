@@ -30,7 +30,7 @@ mkdir -p nillion/accuser
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 initialise
 ```
 
-6️⃣ Now, Must Save Your Pvt key/Address/Pub key(Very Imp)
+6️⃣ Now, Must Save Your Pvt key/Address/Pub key (Very Imp)
 ```
 cat ~/nillion/accuser/credentials.json
 ```
@@ -44,7 +44,7 @@ cat ~/nillion/accuser/credentials.json
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5114183
 ```
 
-NOte - Replace To The Latest Block Height (It’s Not Imp to minus -20 to 100 Block Height, just Replace To latest Block height)
+NOte - Replace To The Latest Block Height (It’s Imp to minus -20 to 50 Block Height, just Replace To latest Block height)
 
 Important Points
 - If You Saw Registered = True(Means You did all the steps correctly), 
@@ -59,5 +59,7 @@ Important Points
 ``` 
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5114183
 ```
+
+NOte - Replace To The Latest Block Height (It’s Imp to minus -20 to 50 Block Height, just Replace To latest Block height)
 
 
