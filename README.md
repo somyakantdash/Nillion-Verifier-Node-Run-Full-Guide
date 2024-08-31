@@ -81,6 +81,9 @@ Important Points
 - If Coming False,Then Do from step1 Again With New wallet and wait Minimum 1hr To do 9th step or 6th step from official page.
 - And Secret Stores Found/Challenge Sent - 1 Or 3 Or 5 (means Your node running good and inc stores found as much u can).- More Stores Found = More Rewards
 
+![6233144569508249062](https://github.com/user-attachments/assets/bab19934-c6b3-4c75-b83a-34bd13e8ccc0)
+
+
 🔶For Next Day Run This Command
 
 #1 Open docker 1st 
