@@ -10,6 +10,8 @@
 
 ➡Claim Faucet - https://faucet.testnet.nillion.com/
 
+➡Task Link - https://verifier.nillion.com/
+
   🍀For VPS (Additional Only for VPS Users to Download Docker)
 ```
 sudo apt update -y
@@ -78,9 +80,6 @@ Important Points
 - If You Saw Registered = True(Means You did all the steps correctly), 
 - If Coming False,Then Do from step1 Again With New wallet and wait Minimum 1hr To do 9th step or 6th step from official page.
 - And Secret Stores Found/Challenge Sent - 1 Or 3 Or 5 (means Your node running good and inc stores found as much u can).- More Stores Found = More Rewards
-
-  ![6233144569508249062](https://github.com/user-attachments/assets/2657ef73-30b4-4363-9494-6580df0cdd1d)
-
 
 🔶For Next Day Run This Command
 
