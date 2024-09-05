@@ -78,10 +78,11 @@ Note - Replace To The Latest Block Height (It’s Imp to minus -5 to 10 Block He
 
 Important Points
 - If You Saw Registered = True(Means You did all the steps correctly), 
-- If Coming False,Then Do from step1 Again With New wallet and wait Minimum 1hr To do 9th step or 6th step from official page.
+- If Coming False,Then Do from step1 Again With New wallet and wait Minimum 5-10 minute To do 9th step or 6th step from official page.
 - And Secret Stores Found/Challenge Sent - 1 Or 3 Or 5 (means Your node running good and inc stores found as much u can).- More Stores Found = More Rewards
 
-![6233144569508249062](https://github.com/user-attachments/assets/bab19934-c6b3-4c75-b83a-34bd13e8ccc0)
+![Snapshot_3](https://github.com/user-attachments/assets/6e4e832e-70dd-476a-a734-42d6d61c355f)
+
 
 
 🔶For Next Day Run This Command
