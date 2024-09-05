@@ -95,4 +95,33 @@ docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accu
 
 Note - Replace To The Latest Block Height (It’s Imp to minus -20 to 40 Block Height, just Replace To latest Block height)
 
+## False Error Solut5ion Guide
 
+1️⃣ Check ur Address Id & Public Key
+```
+mkdir -p nillion/accuser && sudo docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:latest initialise
+```
+
+2️⃣ Clean up ur old containers
+```
+docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
+```
+
+3️⃣ Now Craete New KEPLR WALLET (Claim Faucet) & Connect in Nillion
+
+➡Claim Faucet - https://faucet.testnet.nillion.com/
+
+➡Task Link - https://verifier.nillion.com/
+
+🔶Verify ur Address ID & PUB KEY with New Keplr
+
+4️⃣ Do This Step, After 1hr And wait for syncing the latest block height
+```
+docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://nillion-testnet-rpc.polkachu.com/" --block-start 5306704
+```
+OPTIONAL
+```
+docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5309298
+```
+
+Note - Replace To The Latest Block Height (It’s Imp to minus -5 to 10 Block Height, just Replace To latest Block height)
