@@ -102,26 +102,61 @@ Note - Replace To The Latest Block Height (It’s Imp to minus -20 to 40 Block H
 mkdir -p nillion/accuser && sudo docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:latest initialise
 ```
 
-2️⃣ Clean up ur old containers
+2️⃣ Check ur Nillion Container Id
 ```
-docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
+docker ps -a 
 ```
+3️⃣ Clean up ur old containers
+```
+docker rm containerid  
+```
+Note: Replace containerid With ur actual container Id
 
-3️⃣ Now Create New KEPLR WALLET (Claim Faucet) & Connect in Nillion
+4️⃣ Now Create New KEPLR WALLET (Claim Faucet) & Connect in Nillion
 
 ➡Claim Faucet - https://faucet.testnet.nillion.com/
 
 ➡Task Link - https://verifier.nillion.com/
 
-🔶Verify ur Address ID & PUB KEY with New Keplr
+5️⃣ Pull The Accuser Image
+```
+docker pull nillion/retailtoken-accuser:v1.0.0
+```
 
-4️⃣ Do This Step, After 1hr And wait for syncing the latest block height
+6️⃣ Initialise Docker (Save Key & Paste On web)
+```
+docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 initialise
+```
+
+🔶Verify ur Address ID & PUB KEY
+
+7️⃣ Now, Must Save Your Pvt key/Address/Pub key (Very Imp)
+```
+cat ~/nillion/accuser/credentials.json
+```
+
+8️⃣ Do This Step, After 1hr And wait for syncing the latest block height
 ```
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://nillion-testnet-rpc.polkachu.com/" --block-start 5306704
 ```
-OPTIONAL
-```
-docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5309298
-```
 
-Note - Replace To The Latest Block Height (It’s Imp to minus -5 to 10 Block Height, just Replace To latest Block height)
+Explorer:- https://testnet.nillion.explorers.guru/
+
+Note - Replace To The Latest Block Height according to ur Keplr Wallet Nillion address (It’s Imp to minus -5 to 10 Block Height, just Replace To latest Block height)
+
+9️⃣ Open New Wsl Window & Copy ur latest Nillion Container Id
+```
+docker ps
+```
+🔟 Now, Replace With containerid
+```
+docker logs --since 5m containerid | grep -i "registered"
+```
+1️⃣1️⃣ Restart ur Docker (Must Replace containerid)
+```
+docker restart containerid
+```
+1️⃣2️⃣ Attach ur Docker (Must Replace containerid)
+```
+docker attach containerid
+```
