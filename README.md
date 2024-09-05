@@ -107,7 +107,7 @@ mkdir -p nillion/accuser && sudo docker run -v ./nillion/accuser:/var/tmp nillio
 docker stop $(docker ps -aq) && docker rm $(docker ps -aq)
 ```
 
-3️⃣ Now Craete New KEPLR WALLET (Claim Faucet) & Connect in Nillion
+3️⃣ Now Create New KEPLR WALLET (Claim Faucet) & Connect in Nillion
 
 ➡Claim Faucet - https://faucet.testnet.nillion.com/
 
