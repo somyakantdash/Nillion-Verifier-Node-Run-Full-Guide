@@ -69,12 +69,12 @@ cat ~/nillion/accuser/credentials.json
 
 8️⃣ You Can Check,faucet from here/Check Block & Replace - https://testnet.nillion.explorers.guru/
 
-9️⃣ Do This Step, After 1hr And wait for syncing the latest block height
+9️⃣ Do This Step, After 5-10 minute And wait for syncing the latest block height
 ```
-docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5114183
+docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://nillion-testnet-rpc.polkachu.com/" --block-start 5306704
 ```
 
-Note - Replace To The Latest Block Height (It’s Imp to minus -20 to 40 Block Height, just Replace To latest Block height)
+Note - Replace To The Latest Block Height (It’s Imp to minus -5 to 10 Block Height, just Replace To latest Block height)
 
 Important Points
 - If You Saw Registered = True(Means You did all the steps correctly), 
@@ -92,8 +92,6 @@ Important Points
 ``` 
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5114183
 ```
-
-Note - Replace To The Latest Block Height (It’s Imp to minus -20 to 40 Block Height, just Replace To latest Block height)
 
 # False Error Soluttion Guide
 
@@ -135,7 +133,7 @@ docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 init
 cat ~/nillion/accuser/credentials.json
 ```
 
-8️⃣ Do This Step, After 1hr And wait for syncing the latest block height
+8️⃣ Do This Step, After 5-10 minute And wait for syncing the latest block height
 ```
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://nillion-testnet-rpc.polkachu.com/" --block-start 5306704
 ```
@@ -144,19 +142,11 @@ Explorer:- https://testnet.nillion.explorers.guru/
 
 Note - Replace To The Latest Block Height according to ur Keplr Wallet Nillion address (It’s Imp to minus -5 to 10 Block Height, just Replace To latest Block height)
 
-9️⃣ Open New Wsl Window & Copy ur latest Nillion Container Id
-```
-docker ps
-```
-🔟 Now, Replace With containerid
-```
-docker logs --since 5m containerid | grep -i "registered"
-```
-1️⃣1️⃣ Restart ur Docker (Must Replace containerid)
-```
-docker restart containerid
-```
-1️⃣2️⃣ Attach ur Docker (Must Replace containerid)
-```
-docker attach containerid
+🔶For Next Day Run This Command
+
+#1 Open docker 1st 
+
+#2
+``` 
+docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5114183
 ```
