@@ -95,7 +95,7 @@ docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accu
 
 Note - Replace To The Latest Block Height (It’s Imp to minus -20 to 40 Block Height, just Replace To latest Block height)
 
-## False Error Soluttion Guide
+# False Error Soluttion Guide
 
 1️⃣ Check ur Address Id & Public Key
 ```
