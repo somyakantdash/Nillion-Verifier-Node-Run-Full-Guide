@@ -151,3 +151,70 @@ Note - Replace To The Latest Block Height according to ur Keplr Wallet Nillion a
 ``` 
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5114183
 ```
+
+## Nillion Verifier Node Run V 1.0.1 Upgrade
+
+**For Windows:** (PC users Docker User) 
+
+```
+docker run -v ./nillion/accuser:/var/tmp nillion/verifier:v1.0.1 verify --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com"
+```
+
+1️⃣🅰️ Check ur Nillion Container Id
+```
+docker ps
+```
+
+1️⃣🅱️ Replace containerid With ur actual container Id to "Challenge Secret" Score
+```
+docker logs -f containerid | grep "challenged secret"
+```
+
+🔶For Next Day Run This Command
+
+#1 Open docker 1st 
+
+#2
+``` 
+docker run -v ./nillion/accuser:/var/tmp nillion/verifier:v1.0.1 verify --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com"
+```
+
+**For VPS:**
+
+1️⃣ Check ur Nillion Container Id
+```
+docker ps
+```
+
+2️⃣ Clean up ur old containers
+```
+docker rm containerid  
+```
+Note: Replace containerid With ur actual container Id
+
+3️⃣ SAVE our Data
+```
+sudo find / -name credentials.json
+```
+
+Replace IPaddress is ur actual VPS IPaddress & Replace (C:\Users\somyakantdash\Downloads) With ur actual File Explorer Downloads in ur System
+```
+scp root@IPaddress:/root/nillion/accuser/credentials.json C:\Users\somyakantdash\Downloads
+```
+
+4️⃣ Upgrade to New Version 1.0.1 
+```
+sudo docker run -v ./nillion/accuser:/var/tmp nillion/verifier:v1.0.1 verify --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com"
+```
+
+5️⃣ You can Check ur "Challenge Secret" Score
+
+Check ur Nillion Container Id
+```
+docker ps
+```
+
+Replace containerid With ur actual container Id to check Scores
+```
+docker logs -f containerid | grep "challenged secret"
+```
