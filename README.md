@@ -161,12 +161,14 @@ To Run this Command Directly
 docker run -v ./nillion/accuser:/var/tmp nillion/verifier:v1.0.1 verify --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com"
 ```
 
-1️⃣🅰️ Check ur Nillion Container Id
+1️⃣ You can Check ur "Challenge Secret" Score (open another window for WSL)
+
+Check ur Nillion Container Id
 ```
 docker ps
 ```
 
-1️⃣🅱️ Replace containerid With ur actual container Id to "Challenge Secret" Score
+Replace containerid With ur actual container Id to check Scores
 ```
 docker logs -f containerid | grep "challenged secret"
 ```
