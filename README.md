@@ -152,9 +152,9 @@ Note - Replace To The Latest Block Height according to ur Keplr Wallet Nillion a
 docker run -v ./nillion/accuser:/var/tmp nillion/retailtoken-accuser:v1.0.0 accuse --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com" --block-start 5114183
 ```
 
-## Nillion Verifier Node Run V 1.0.1 Upgrade
+# Nillion Verifier Node Run V 1.0.1 Upgrade
 
-### **For Windows:** (PC users Docker User) 
+## **For Windows:** (PC users Docker User) 
 
 To Run this Command Directly
 ```
@@ -173,7 +173,7 @@ Replace containerid With ur actual container Id to check Scores
 docker logs -f containerid | grep "challenged secret"
 ```
 
-🔶For Next Day Run This Command
+### 🔶For Next Day Run This Command
 
 #1 Open docker 1st 
 
@@ -182,7 +182,7 @@ docker logs -f containerid | grep "challenged secret"
 docker run -v ./nillion/accuser:/var/tmp nillion/verifier:v1.0.1 verify --rpc-endpoint "https://testnet-nillion-rpc.lavenderfive.com"
 ```
 
-### **For VPS:**
+## **For VPS:**
 
 1️⃣ Check ur Nillion Container Id
 ```
