@@ -187,7 +187,7 @@ docker run -v ./nillion/accuser:/var/tmp nillion/verifier:v1.0.1 verify --rpc-en
 docker ps
 ```
 
-2️⃣ Clean up ur old containers
+2️⃣ Clean up ur old containers (only 80% clear not 100%)
 ```
 docker rm containerid  
 ```
